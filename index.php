@@ -86,8 +86,8 @@ button:hover, a:hover {
     <h2 style="font-family: verdana;font-weight:700; font-size: 18PX;Color:#202020;line-height: 20PX">COLLEGE</h2>
         <div class="card">
 	           <?php
-	                   //$con = mysqli_connect('localhost','root','','admissio_university_tabdatabase');
-$con = mysqli_connect('localhost','admissio_user22','vashi@123','admissio_university_tabdatabase');  
+	                   //$con = mysqli_connect('localhost','admissio_user22','vashi@123','admissio_university_tabdatabase');
+$con = mysqli_connect('localhost','root','','admissio_university_tabdatabase');  
 						    	   $query3= "SELECT  college_information.*, college_details.*, websitetag.* FROM college_information, college_details, websitetag WHERE college_information.university_id = college_details.s_id AND            college_details.s_id = websitetag.s_id";
 							      $result = mysqli_query($con, $query3);
 							               if (mysqli_num_rows($result) > 0) {
